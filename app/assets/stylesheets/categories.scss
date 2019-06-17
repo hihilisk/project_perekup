@@ -1,0 +1,37 @@
+.table {
+  font-size: 14px;
+  font-family: arial, sans-serif;
+  color: #393939;
+}
+
+.table-blur {
+  background: #f5ffff;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.table-blur {
+  th {
+    background: linear-gradient(#a2a2c3, #433f61);
+    color: white;
+    padding: 5px 15px;
+    position: relative;
+  }
+
+  tr {
+    background-color: white;
+
+    &:nth-child(odd) {
+      background: #ebebeb;
+    }
+
+    &:hover {
+      background-color: rgba(205, 234, 246, 0.19);
+    }
+  }
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

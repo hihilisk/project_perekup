@@ -1,0 +1,13 @@
+<h1>Создание категории</h1>
+
+<%= form_for @category do |f| %>
+<div>
+  <p> <%= f.label :'Производитель:' %> <%= f.text_field :produces %> </p>
+  <p> <%= f.label :'Модель:' %>  <%= f.text_field :model %> </p>
+  <p> <%= f.label :'Год_изготовления:' %> <%= f.text_field :year %>  </p>
+  <p> <%= f.label :'Средняя_цена:' %> <%= f.text_field :average_price %> </p>
+  <p> <%= f.label :'Комплектация:' %> <%= f.text_field :equipment %> </p>
+  <p> <%= f.label :'Примечания:' %> <%= f.text_area :notes %> </p>
+  <p> <%= f.submit %> </p>
+</div>
+<% end %>

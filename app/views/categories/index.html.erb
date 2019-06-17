@@ -1,0 +1,27 @@
+<h1>Все категории</h1>
+  <div class="table">
+    <table class="table-blur">
+      <thead>
+        <th>Производитель</th>
+        <th>Модель</th>
+        <th>Год выпуска</th>
+        <th>Средняя стоимость</th>
+        <th>Комплектация</th>
+        <th>Примечания</th>
+        <th>Дата создания</th>
+        <th>Дата последнего редактирования</th>
+      </thead>
+      <% @categories.each do |category| %>
+        <tr>
+          <td><%= link_to category.produces, categories_path(category) %></td>
+          <td><%= link_to category.model, (category) %></td>
+          <td><%= link_to category.year, (category) %></td>
+          <td><%= link_to category.average_price, (category) %></td>
+          <td><%= link_to category.equipment, (category) %></td>
+          <td><%= link_to category.notes, (category) %></td>
+          <td><%= link_to category.created_at, (category) %></td>
+          <td><%= link_to category.updated_at, (category) %></td>
+        </tr>
+      <% end %>
+    </table>
+  </div>
